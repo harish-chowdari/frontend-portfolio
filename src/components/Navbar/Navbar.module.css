@@ -1,0 +1,117 @@
+@import "../../vars.css";
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 61px;
+    z-index: 2;
+    margin: 0 10%;
+}
+
+.title {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600px;
+
+}
+
+.menu {
+    display: flex;
+}
+
+.menuItems{
+    list-style: none;
+    display: flex;
+    gap: 47px;
+}
+
+.menuItems a {
+    font-size: 20px;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:830px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .menu {
+        position: absolute;
+        right: 0;
+        margin-right: 0%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+    .menuItems {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+        background: rgb(25, 55, 109);
+        background: linear-gradient(0deg,
+         rgba(25, 55, 109, 0.2) 0%,
+         rgba(25, 55, 109, 1) 100%
+         );
+        
+        padding: 24px 35px;
+        box-shadow: 0 0 9px 6px rgba(0, 0, 0, 0.25);
+    }
+    .menuOpen {
+        display: flex;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width:831px) {
+    .menuBtn {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width:500px) {
+
+.navbar {
+    padding-top: 15px;
+    z-index: 2;
+    margin: 0 5%;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600px;
+
+}
+
+.menuItems{
+    gap: 8px;
+    position: absolute;
+    right: 0px;
+    top: 80%;
+    z-index: 3;
+    padding: 7px 15px;
+}
+
+.menuItems a {
+    font-size: 16px;
+}
+
+.menuBtn {
+    width: 21px;
+}
+    
+}
