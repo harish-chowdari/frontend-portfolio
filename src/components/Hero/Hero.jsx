@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section className={Styles.container}>
     <div className={Styles.content}>
-        <h1 className={Styles.title}>Hi, I am Harish</h1>
+        <h1 className={Styles.title}>Hi, I am Harish Nagubadi</h1>
         <p className={Styles.description}>
        I have developed and contributed to several web development projects using modern web technologies such as HTML, CSS, JavaScript, and ReactJS. These projects demonstrate my ability to create responsive, user-friendly interfaces and dynamic web applications.
         </p>
